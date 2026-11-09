@@ -1,0 +1,1540 @@
+{
+  "connector": "Databricks Cost Connector",
+  "execution_time_utc": "2026-10-10T15:48:13.466291Z",
+  "authentication": {
+    "status": "successful"
+  },
+  "account_workspace_discovery": {
+    "account_discovered": true,
+    "account_ids": [
+      "[REDACTED]"
+    ],
+    "workspace_discovered": true,
+    "workspace_ids": [
+      "[REDACTED]"
+    ]
+  },
+  "collection_window": {
+    "start_utc": "2026-10-04T12:00:00Z",
+    "end_utc": "2026-10-10T15:47:55.953325Z"
+  },
+  "source_count_investigated": 27,
+  "category_count_investigated": 17,
+  "broad_system_discovery": {
+    "status": "successful",
+    "schemas": [
+      "access",
+      "ai",
+      "ai_gateway",
+      "alert",
+      "billing",
+      "compute",
+      "information_schema",
+      "lakeflow",
+      "lakeflow_pipeline_events_preview",
+      "mlflow",
+      "query",
+      "serving",
+      "sharing",
+      "storage",
+      "tags"
+    ],
+    "alert_schema_present": true,
+    "tables_by_schema": {
+      "access": [
+        "assistant_events",
+        "audit",
+        "clean_room_events",
+        "column_lineage",
+        "inbound_network",
+        "outbound_network",
+        "table_lineage",
+        "workspaces_latest"
+      ],
+      "ai": [],
+      "ai_gateway": [
+        "external_model_spend",
+        "usage"
+      ],
+      "alert": [
+        "alert_evaluation_history",
+        "alerts"
+      ],
+      "billing": [
+        "account_prices",
+        "attributed_usage",
+        "cloud_infra_cost",
+        "list_prices",
+        "usage"
+      ],
+      "compute": [
+        "clusters",
+        "instance_events",
+        "instance_pools",
+        "node_timeline",
+        "node_types",
+        "warehouse_events",
+        "warehouses"
+      ],
+      "information_schema": [
+        "abac_policy_definitions",
+        "catalog_privileges",
+        "catalog_provider_share_usage",
+        "catalog_tags",
+        "catalogs",
+        "check_constraints",
+        "column_masks",
+        "column_tags",
+        "columns",
+        "connection_privileges",
+        "connections",
+        "constraint_column_usage",
+        "constraint_table_usage",
+        "credential_privileges",
+        "credentials",
+        "external_location_privileges",
+        "external_locations",
+        "information_schema_catalog_name",
+        "key_column_usage",
+        "metastore_privileges",
+        "metastores",
+        "parameters",
+        "providers",
+        "recipient_allowed_ip_ranges",
+        "recipient_tokens",
+        "recipients",
+        "referential_constraints",
+        "routine_columns",
+        "routine_privileges",
+        "routines",
+        "row_filters",
+        "schema_privileges",
+        "schema_share_usage",
+        "schema_tags",
+        "schemata",
+        "share_recipient_privileges",
+        "shares",
+        "storage_credential_privileges",
+        "storage_credentials",
+        "table_constraints",
+        "table_privileges",
+        "table_share_usage",
+        "table_tags",
+        "tables",
+        "views",
+        "volume_privileges",
+        "volume_tags",
+        "volumes"
+      ],
+      "lakeflow": [
+        "job_run_timeline",
+        "job_task_run_timeline",
+        "job_tasks",
+        "jobs",
+        "pipeline_update_timeline",
+        "pipelines",
+        "zerobus_ingest",
+        "zerobus_stream"
+      ],
+      "lakeflow_pipeline_events_preview": [
+        "pipeline_events"
+      ],
+      "mlflow": [
+        "experiments_latest",
+        "run_metrics_history",
+        "runs_latest"
+      ],
+      "query": [
+        "history"
+      ],
+      "serving": [
+        "endpoint_usage",
+        "served_entities"
+      ],
+      "sharing": [
+        "materialization_history"
+      ],
+      "storage": [
+        "auto_upgrade_operations_history",
+        "predictive_optimization_operations_history",
+        "table_metrics_history"
+      ],
+      "tags": [
+        "governed_tags"
+      ]
+    },
+    "schema_listing_failures": [],
+    "error": null
+  },
+  "discovery_reconciliation": [
+    {
+      "schema": "access",
+      "table": "assistant_events",
+      "source_name": null,
+      "collection_status": "not_configured",
+      "explanation": "Discovered in a cost-relevant schema; no collector is configured because this table's record semantics have not been validated."
+    },
+    {
+      "schema": "access",
+      "table": "audit",
+      "source_name": null,
+      "collection_status": "not_configured",
+      "explanation": "Discovered in a cost-relevant schema; no collector is configured because this table's record semantics have not been validated."
+    },
+    {
+      "schema": "access",
+      "table": "clean_room_events",
+      "source_name": null,
+      "collection_status": "not_configured",
+      "explanation": "Discovered in a cost-relevant schema; no collector is configured because this table's record semantics have not been validated."
+    },
+    {
+      "schema": "access",
+      "table": "column_lineage",
+      "source_name": null,
+      "collection_status": "not_configured",
+      "explanation": "Discovered in a cost-relevant schema; no collector is configured because this table's record semantics have not been validated."
+    },
+    {
+      "schema": "access",
+      "table": "inbound_network",
+      "source_name": "network_inbound",
+      "collection_status": "empty",
+      "explanation": "Collection attempted by the configured source."
+    },
+    {
+      "schema": "access",
+      "table": "outbound_network",
+      "source_name": "network_outbound",
+      "collection_status": "empty",
+      "explanation": "Collection attempted by the configured source."
+    },
+    {
+      "schema": "access",
+      "table": "table_lineage",
+      "source_name": null,
+      "collection_status": "not_configured",
+      "explanation": "Discovered in a cost-relevant schema; no collector is configured because this table's record semantics have not been validated."
+    },
+    {
+      "schema": "access",
+      "table": "workspaces_latest",
+      "source_name": "workspaces_latest",
+      "collection_status": "collected",
+      "explanation": "Collection attempted by the configured source."
+    },
+    {
+      "schema": "ai_gateway",
+      "table": "external_model_spend",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "ai_gateway",
+      "table": "usage",
+      "source_name": null,
+      "collection_status": "not_configured",
+      "explanation": "Discovered in a cost-relevant schema; no collector is configured because this table's record semantics have not been validated."
+    },
+    {
+      "schema": "alert",
+      "table": "alert_evaluation_history",
+      "source_name": null,
+      "collection_status": "not_configured",
+      "explanation": "Discovered in a cost-relevant schema; no collector is configured because this table's record semantics have not been validated."
+    },
+    {
+      "schema": "alert",
+      "table": "alerts",
+      "source_name": null,
+      "collection_status": "not_configured",
+      "explanation": "Discovered in a cost-relevant schema; no collector is configured because this table's record semantics have not been validated."
+    },
+    {
+      "schema": "billing",
+      "table": "account_prices",
+      "source_name": "billing_account_prices",
+      "collection_status": "empty",
+      "explanation": "Collection attempted by the configured source."
+    },
+    {
+      "schema": "billing",
+      "table": "attributed_usage",
+      "source_name": "billing_attributed_usage",
+      "collection_status": "empty",
+      "explanation": "Collection attempted by the configured source."
+    },
+    {
+      "schema": "billing",
+      "table": "cloud_infra_cost",
+      "source_name": "billing_cloud_infra_cost",
+      "collection_status": "empty",
+      "explanation": "Collection attempted by the configured source."
+    },
+    {
+      "schema": "billing",
+      "table": "list_prices",
+      "source_name": "billing_list_prices",
+      "collection_status": "collected",
+      "explanation": "Collection attempted by the configured source."
+    },
+    {
+      "schema": "billing",
+      "table": "usage",
+      "source_name": "billing_usage",
+      "collection_status": "collected",
+      "explanation": "Collection attempted by the configured source."
+    },
+    {
+      "schema": "compute",
+      "table": "clusters",
+      "source_name": "compute_clusters",
+      "collection_status": "empty",
+      "explanation": "Collection attempted by the configured source."
+    },
+    {
+      "schema": "compute",
+      "table": "instance_events",
+      "source_name": "compute_instance_events",
+      "collection_status": "empty",
+      "explanation": "Collection attempted by the configured source."
+    },
+    {
+      "schema": "compute",
+      "table": "instance_pools",
+      "source_name": "compute_instance_pools",
+      "collection_status": "empty",
+      "explanation": "Collection attempted by the configured source."
+    },
+    {
+      "schema": "compute",
+      "table": "node_timeline",
+      "source_name": "compute_node_timeline",
+      "collection_status": "empty",
+      "explanation": "Collection attempted by the configured source."
+    },
+    {
+      "schema": "compute",
+      "table": "node_types",
+      "source_name": "compute_node_types",
+      "collection_status": "collected",
+      "explanation": "Collection attempted by the configured source."
+    },
+    {
+      "schema": "compute",
+      "table": "warehouse_events",
+      "source_name": "compute_warehouse_events",
+      "collection_status": "collected",
+      "explanation": "Collection attempted by the configured source."
+    },
+    {
+      "schema": "compute",
+      "table": "warehouses",
+      "source_name": "compute_warehouses",
+      "collection_status": "collected",
+      "explanation": "Collection attempted by the configured source."
+    },
+    {
+      "schema": "information_schema",
+      "table": "abac_policy_definitions",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "catalog_privileges",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "catalog_provider_share_usage",
+      "source_name": null,
+      "collection_status": "not_configured",
+      "explanation": "Discovered in a cost-relevant schema; no collector is configured because this table's record semantics have not been validated."
+    },
+    {
+      "schema": "information_schema",
+      "table": "catalog_tags",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "catalogs",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "check_constraints",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "column_masks",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "column_tags",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "columns",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "connection_privileges",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "connections",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "constraint_column_usage",
+      "source_name": null,
+      "collection_status": "not_configured",
+      "explanation": "Discovered in a cost-relevant schema; no collector is configured because this table's record semantics have not been validated."
+    },
+    {
+      "schema": "information_schema",
+      "table": "constraint_table_usage",
+      "source_name": null,
+      "collection_status": "not_configured",
+      "explanation": "Discovered in a cost-relevant schema; no collector is configured because this table's record semantics have not been validated."
+    },
+    {
+      "schema": "information_schema",
+      "table": "credential_privileges",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "credentials",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "external_location_privileges",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "external_locations",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "information_schema_catalog_name",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "key_column_usage",
+      "source_name": null,
+      "collection_status": "not_configured",
+      "explanation": "Discovered in a cost-relevant schema; no collector is configured because this table's record semantics have not been validated."
+    },
+    {
+      "schema": "information_schema",
+      "table": "metastore_privileges",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "metastores",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "parameters",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "providers",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "recipient_allowed_ip_ranges",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "recipient_tokens",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "recipients",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "referential_constraints",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "routine_columns",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "routine_privileges",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "routines",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "row_filters",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "schema_privileges",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "schema_share_usage",
+      "source_name": null,
+      "collection_status": "not_configured",
+      "explanation": "Discovered in a cost-relevant schema; no collector is configured because this table's record semantics have not been validated."
+    },
+    {
+      "schema": "information_schema",
+      "table": "schema_tags",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "schemata",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "share_recipient_privileges",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "shares",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "storage_credential_privileges",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "storage_credentials",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "table_constraints",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "table_privileges",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "table_share_usage",
+      "source_name": null,
+      "collection_status": "not_configured",
+      "explanation": "Discovered in a cost-relevant schema; no collector is configured because this table's record semantics have not been validated."
+    },
+    {
+      "schema": "information_schema",
+      "table": "table_tags",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "tables",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "views",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "volume_privileges",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "volume_tags",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "information_schema",
+      "table": "volumes",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "lakeflow",
+      "table": "job_run_timeline",
+      "source_name": "lakeflow_job_runs",
+      "collection_status": "empty",
+      "explanation": "Collection attempted by the configured source."
+    },
+    {
+      "schema": "lakeflow",
+      "table": "job_task_run_timeline",
+      "source_name": "lakeflow_task_runs",
+      "collection_status": "empty",
+      "explanation": "Collection attempted by the configured source."
+    },
+    {
+      "schema": "lakeflow",
+      "table": "job_tasks",
+      "source_name": "lakeflow_job_tasks",
+      "collection_status": "empty",
+      "explanation": "Collection attempted by the configured source."
+    },
+    {
+      "schema": "lakeflow",
+      "table": "jobs",
+      "source_name": "lakeflow_jobs",
+      "collection_status": "empty",
+      "explanation": "Collection attempted by the configured source."
+    },
+    {
+      "schema": "lakeflow",
+      "table": "pipeline_update_timeline",
+      "source_name": "lakeflow_pipeline_updates",
+      "collection_status": "empty",
+      "explanation": "Collection attempted by the configured source."
+    },
+    {
+      "schema": "lakeflow",
+      "table": "pipelines",
+      "source_name": "lakeflow_pipelines",
+      "collection_status": "empty",
+      "explanation": "Collection attempted by the configured source."
+    },
+    {
+      "schema": "lakeflow",
+      "table": "zerobus_ingest",
+      "source_name": null,
+      "collection_status": "not_configured",
+      "explanation": "Discovered in a cost-relevant schema; no collector is configured because this table's record semantics have not been validated."
+    },
+    {
+      "schema": "lakeflow",
+      "table": "zerobus_stream",
+      "source_name": null,
+      "collection_status": "not_configured",
+      "explanation": "Discovered in a cost-relevant schema; no collector is configured because this table's record semantics have not been validated."
+    },
+    {
+      "schema": "lakeflow_pipeline_events_preview",
+      "table": "pipeline_events",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "mlflow",
+      "table": "experiments_latest",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "mlflow",
+      "table": "run_metrics_history",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "mlflow",
+      "table": "runs_latest",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "query",
+      "table": "history",
+      "source_name": "query_history",
+      "collection_status": "collected",
+      "explanation": "Collection attempted by the configured source."
+    },
+    {
+      "schema": "serving",
+      "table": "endpoint_usage",
+      "source_name": "serving_endpoint_usage",
+      "collection_status": "empty",
+      "explanation": "Collection attempted by the configured source."
+    },
+    {
+      "schema": "serving",
+      "table": "served_entities",
+      "source_name": "serving_entities",
+      "collection_status": "empty",
+      "explanation": "Collection attempted by the configured source."
+    },
+    {
+      "schema": "sharing",
+      "table": "materialization_history",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    },
+    {
+      "schema": "storage",
+      "table": "auto_upgrade_operations_history",
+      "source_name": "storage_auto_upgrade",
+      "collection_status": "empty",
+      "explanation": "Collection attempted by the configured source."
+    },
+    {
+      "schema": "storage",
+      "table": "predictive_optimization_operations_history",
+      "source_name": "storage_predictive_optimization",
+      "collection_status": "empty",
+      "explanation": "Collection attempted by the configured source."
+    },
+    {
+      "schema": "storage",
+      "table": "table_metrics_history",
+      "source_name": "storage_table_metrics",
+      "collection_status": "empty",
+      "explanation": "Collection attempted by the configured source."
+    },
+    {
+      "schema": "tags",
+      "table": "governed_tags",
+      "source_name": null,
+      "collection_status": "outside_cost_scope",
+      "explanation": "Discovered outside the configured cost-management schemas."
+    }
+  ],
+  "pricing": {
+    "list_cost_records_calculated": 135,
+    "usage_records_without_applicable_price": 3
+  },
+  "normalization": {
+    "normalized_record_count": 138,
+    "records_skipped_by_source": {}
+  },
+  "source_results": [
+    {
+      "source_name": "billing_usage",
+      "dataset": "system.billing.usage",
+      "status": "collected",
+      "record_count": 138,
+      "partial_record_count": 0,
+      "earliest_timestamp": "2026-10-04T12:00:00Z",
+      "latest_timestamp": "2026-10-10T05:00:00Z",
+      "required_permission": "See source-specific Databricks system-table permissions.",
+      "explanation": null
+    },
+    {
+      "source_name": "billing_list_prices",
+      "dataset": "system.billing.list_prices",
+      "status": "collected",
+      "record_count": 541,
+      "partial_record_count": 0,
+      "earliest_timestamp": "2013-01-01T00:00:00Z",
+      "latest_timestamp": "2026-08-21T00:00:00Z",
+      "required_permission": "See source-specific Databricks system-table permissions.",
+      "explanation": null
+    },
+    {
+      "source_name": "billing_account_prices",
+      "dataset": "system.billing.account_prices",
+      "status": "empty",
+      "record_count": 0,
+      "partial_record_count": 0,
+      "earliest_timestamp": null,
+      "latest_timestamp": null,
+      "required_permission": "See source-specific Databricks system-table permissions.",
+      "explanation": "No records were returned for the requested time range."
+    },
+    {
+      "source_name": "billing_attributed_usage",
+      "dataset": "system.billing.attributed_usage",
+      "status": "empty",
+      "record_count": 0,
+      "partial_record_count": 0,
+      "earliest_timestamp": null,
+      "latest_timestamp": null,
+      "required_permission": "See source-specific Databricks system-table permissions.",
+      "explanation": "No records were returned for the requested time range."
+    },
+    {
+      "source_name": "billing_cloud_infra_cost",
+      "dataset": "system.billing.cloud_infra_cost",
+      "status": "empty",
+      "record_count": 0,
+      "partial_record_count": 0,
+      "earliest_timestamp": null,
+      "latest_timestamp": null,
+      "required_permission": "See source-specific Databricks system-table permissions.",
+      "explanation": "No records were returned for the requested time range."
+    },
+    {
+      "source_name": "compute_clusters",
+      "dataset": "system.compute.clusters",
+      "status": "empty",
+      "record_count": 0,
+      "partial_record_count": 0,
+      "earliest_timestamp": null,
+      "latest_timestamp": null,
+      "required_permission": "See source-specific Databricks system-table permissions.",
+      "explanation": "No records were returned for the requested time range."
+    },
+    {
+      "source_name": "compute_instance_events",
+      "dataset": "system.compute.instance_events",
+      "status": "empty",
+      "record_count": 0,
+      "partial_record_count": 0,
+      "earliest_timestamp": null,
+      "latest_timestamp": null,
+      "required_permission": "See source-specific Databricks system-table permissions.",
+      "explanation": "No records were returned for the requested time range."
+    },
+    {
+      "source_name": "compute_instance_pools",
+      "dataset": "system.compute.instance_pools",
+      "status": "empty",
+      "record_count": 0,
+      "partial_record_count": 0,
+      "earliest_timestamp": null,
+      "latest_timestamp": null,
+      "required_permission": "See source-specific Databricks system-table permissions.",
+      "explanation": "No records were returned for the requested time range."
+    },
+    {
+      "source_name": "compute_node_timeline",
+      "dataset": "system.compute.node_timeline",
+      "status": "empty",
+      "record_count": 0,
+      "partial_record_count": 0,
+      "earliest_timestamp": null,
+      "latest_timestamp": null,
+      "required_permission": "See source-specific Databricks system-table permissions.",
+      "explanation": "No records were returned for the requested time range."
+    },
+    {
+      "source_name": "compute_node_types",
+      "dataset": "system.compute.node_types",
+      "status": "collected",
+      "record_count": 653,
+      "partial_record_count": 0,
+      "earliest_timestamp": null,
+      "latest_timestamp": null,
+      "required_permission": "See source-specific Databricks system-table permissions.",
+      "explanation": null
+    },
+    {
+      "source_name": "compute_warehouses",
+      "dataset": "system.compute.warehouses",
+      "status": "collected",
+      "record_count": 1,
+      "partial_record_count": 0,
+      "earliest_timestamp": "2026-10-04T12:41:57.639000Z",
+      "latest_timestamp": "2026-10-04T12:41:57.639000Z",
+      "required_permission": "See source-specific Databricks system-table permissions.",
+      "explanation": null
+    },
+    {
+      "source_name": "compute_warehouse_events",
+      "dataset": "system.compute.warehouse_events",
+      "status": "collected",
+      "record_count": 105,
+      "partial_record_count": 0,
+      "earliest_timestamp": "2026-10-04T12:47:26.467000Z",
+      "latest_timestamp": "2026-10-10T14:29:53.841000Z",
+      "required_permission": "See source-specific Databricks system-table permissions.",
+      "explanation": null
+    },
+    {
+      "source_name": "lakeflow_jobs",
+      "dataset": "system.lakeflow.jobs",
+      "status": "empty",
+      "record_count": 0,
+      "partial_record_count": 0,
+      "earliest_timestamp": null,
+      "latest_timestamp": null,
+      "required_permission": "See source-specific Databricks system-table permissions.",
+      "explanation": "No records were returned for the requested time range."
+    },
+    {
+      "source_name": "lakeflow_job_tasks",
+      "dataset": "system.lakeflow.job_tasks",
+      "status": "empty",
+      "record_count": 0,
+      "partial_record_count": 0,
+      "earliest_timestamp": null,
+      "latest_timestamp": null,
+      "required_permission": "See source-specific Databricks system-table permissions.",
+      "explanation": "No records were returned for the requested time range."
+    },
+    {
+      "source_name": "lakeflow_job_runs",
+      "dataset": "system.lakeflow.job_run_timeline",
+      "status": "empty",
+      "record_count": 0,
+      "partial_record_count": 0,
+      "earliest_timestamp": null,
+      "latest_timestamp": null,
+      "required_permission": "See source-specific Databricks system-table permissions.",
+      "explanation": "No records were returned for the requested time range."
+    },
+    {
+      "source_name": "lakeflow_task_runs",
+      "dataset": "system.lakeflow.job_task_run_timeline",
+      "status": "empty",
+      "record_count": 0,
+      "partial_record_count": 0,
+      "earliest_timestamp": null,
+      "latest_timestamp": null,
+      "required_permission": "See source-specific Databricks system-table permissions.",
+      "explanation": "No records were returned for the requested time range."
+    },
+    {
+      "source_name": "lakeflow_pipelines",
+      "dataset": "system.lakeflow.pipelines",
+      "status": "empty",
+      "record_count": 0,
+      "partial_record_count": 0,
+      "earliest_timestamp": null,
+      "latest_timestamp": null,
+      "required_permission": "See source-specific Databricks system-table permissions.",
+      "explanation": "No records were returned for the requested time range."
+    },
+    {
+      "source_name": "lakeflow_pipeline_updates",
+      "dataset": "system.lakeflow.pipeline_update_timeline",
+      "status": "empty",
+      "record_count": 0,
+      "partial_record_count": 0,
+      "earliest_timestamp": null,
+      "latest_timestamp": null,
+      "required_permission": "See source-specific Databricks system-table permissions.",
+      "explanation": "No records were returned for the requested time range."
+    },
+    {
+      "source_name": "storage_table_metrics",
+      "dataset": "system.storage.table_metrics_history",
+      "status": "empty",
+      "record_count": 0,
+      "partial_record_count": 0,
+      "earliest_timestamp": null,
+      "latest_timestamp": null,
+      "required_permission": "See source-specific Databricks system-table permissions.",
+      "explanation": "No records were returned for the requested time range."
+    },
+    {
+      "source_name": "storage_predictive_optimization",
+      "dataset": "system.storage.predictive_optimization_operations_history",
+      "status": "empty",
+      "record_count": 0,
+      "partial_record_count": 0,
+      "earliest_timestamp": null,
+      "latest_timestamp": null,
+      "required_permission": "See source-specific Databricks system-table permissions.",
+      "explanation": "No records were returned for the requested time range."
+    },
+    {
+      "source_name": "storage_auto_upgrade",
+      "dataset": "system.storage.auto_upgrade_operations_history",
+      "status": "empty",
+      "record_count": 0,
+      "partial_record_count": 0,
+      "earliest_timestamp": null,
+      "latest_timestamp": null,
+      "required_permission": "See source-specific Databricks system-table permissions.",
+      "explanation": "No records were returned for the requested time range."
+    },
+    {
+      "source_name": "query_history",
+      "dataset": "system.query.history",
+      "status": "collected",
+      "record_count": 1198,
+      "partial_record_count": 0,
+      "earliest_timestamp": "2026-10-04T12:47:27.274000Z",
+      "latest_timestamp": "2026-10-10T14:19:30.269000Z",
+      "required_permission": "See source-specific Databricks system-table permissions.",
+      "explanation": null
+    },
+    {
+      "source_name": "workspaces_latest",
+      "dataset": "system.access.workspaces_latest",
+      "status": "collected",
+      "record_count": 1,
+      "partial_record_count": 0,
+      "earliest_timestamp": "2026-10-04T12:41:44Z",
+      "latest_timestamp": "2026-10-04T12:41:44Z",
+      "required_permission": "See source-specific Databricks system-table permissions.",
+      "explanation": null
+    },
+    {
+      "source_name": "network_inbound",
+      "dataset": "system.access.inbound_network",
+      "status": "empty",
+      "record_count": 0,
+      "partial_record_count": 0,
+      "earliest_timestamp": null,
+      "latest_timestamp": null,
+      "required_permission": "See source-specific Databricks system-table permissions.",
+      "explanation": "No records were returned for the requested time range."
+    },
+    {
+      "source_name": "network_outbound",
+      "dataset": "system.access.outbound_network",
+      "status": "empty",
+      "record_count": 0,
+      "partial_record_count": 0,
+      "earliest_timestamp": null,
+      "latest_timestamp": null,
+      "required_permission": "See source-specific Databricks system-table permissions.",
+      "explanation": "No records were returned for the requested time range."
+    },
+    {
+      "source_name": "serving_endpoint_usage",
+      "dataset": "system.serving.endpoint_usage",
+      "status": "empty",
+      "record_count": 0,
+      "partial_record_count": 0,
+      "earliest_timestamp": null,
+      "latest_timestamp": null,
+      "required_permission": "See source-specific Databricks system-table permissions.",
+      "explanation": "No records were returned for the requested time range."
+    },
+    {
+      "source_name": "serving_entities",
+      "dataset": "system.serving.served_entities",
+      "status": "empty",
+      "record_count": 0,
+      "partial_record_count": 0,
+      "earliest_timestamp": null,
+      "latest_timestamp": null,
+      "required_permission": "See source-specific Databricks system-table permissions.",
+      "explanation": "No records were returned for the requested time range."
+    }
+  ],
+  "category_results": [
+    {
+      "category": "Billing and usage",
+      "category_key": "billing_and_usage",
+      "source_name": "billing_and_usage",
+      "dataset": "system.billing.usage",
+      "sources": [
+        "billing_usage"
+      ],
+      "source_statuses": {
+        "billing_usage": "collected"
+      },
+      "purpose": "Collect billable usage records and their source metadata.",
+      "status": "collected",
+      "record_count": 138,
+      "earliest_timestamp": "2026-10-04T12:00:00Z",
+      "latest_timestamp": "2026-10-10T05:00:00Z",
+      "required_permission": "SELECT on system.billing.usage",
+      "explanation": "Records collected successfully."
+    },
+    {
+      "category": "Account and workspace consumption",
+      "category_key": "account_and_workspace_consumption",
+      "source_name": "account_and_workspace_consumption",
+      "dataset": "system.billing.usage, system.billing.cloud_infra_cost, system.access.workspaces_latest",
+      "sources": [
+        "billing_usage",
+        "billing_cloud_infra_cost",
+        "workspaces_latest"
+      ],
+      "source_statuses": {
+        "billing_usage": "collected",
+        "billing_cloud_infra_cost": "empty",
+        "workspaces_latest": "collected"
+      },
+      "purpose": "Attribute usage and infrastructure cost to accounts and workspaces.",
+      "status": "collected",
+      "record_count": 139,
+      "earliest_timestamp": "2026-10-04T12:00:00Z",
+      "latest_timestamp": "2026-10-10T05:00:00Z",
+      "required_permission": "Billing-table access and workspace metadata access",
+      "explanation": "Records collected successfully."
+    },
+    {
+      "category": "Cluster and compute consumption",
+      "category_key": "cluster_and_compute_consumption",
+      "source_name": "cluster_and_compute_consumption",
+      "dataset": "system.billing.usage, system.compute.clusters, system.compute.instance_events, system.compute.instance_pools, system.compute.node_timeline, system.compute.node_types",
+      "sources": [
+        "billing_usage",
+        "compute_clusters",
+        "compute_instance_events",
+        "compute_instance_pools",
+        "compute_node_timeline",
+        "compute_node_types"
+      ],
+      "source_statuses": {
+        "billing_usage": "collected",
+        "compute_clusters": "empty",
+        "compute_instance_events": "empty",
+        "compute_instance_pools": "empty",
+        "compute_node_timeline": "empty",
+        "compute_node_types": "collected"
+      },
+      "purpose": "Collect compute usage and cluster or instance context.",
+      "status": "collected",
+      "record_count": 16,
+      "earliest_timestamp": "2026-10-04T12:00:00Z",
+      "latest_timestamp": "2026-10-08T20:00:00Z",
+      "required_permission": "SELECT on billing and compute system tables",
+      "explanation": "Collected category-specific evidence on 16 record(s)."
+    },
+    {
+      "category": "SQL warehouse consumption",
+      "category_key": "sql_warehouse_consumption",
+      "source_name": "sql_warehouse_consumption",
+      "dataset": "system.billing.usage, system.compute.warehouses, system.compute.warehouse_events",
+      "sources": [
+        "billing_usage",
+        "compute_warehouses",
+        "compute_warehouse_events"
+      ],
+      "source_statuses": {
+        "billing_usage": "collected",
+        "compute_warehouses": "collected",
+        "compute_warehouse_events": "collected"
+      },
+      "purpose": "Collect warehouse usage, configuration, and lifecycle events.",
+      "status": "collected",
+      "record_count": 16,
+      "earliest_timestamp": "2026-10-04T12:00:00Z",
+      "latest_timestamp": "2026-10-08T20:00:00Z",
+      "required_permission": "SELECT on billing and compute system tables",
+      "explanation": "Collected category-specific evidence on 16 record(s)."
+    },
+    {
+      "category": "Jobs and pipeline consumption",
+      "category_key": "jobs_and_pipeline_consumption",
+      "source_name": "jobs_and_pipeline_consumption",
+      "dataset": "system.billing.usage, system.lakeflow.jobs, system.lakeflow.job_tasks, system.lakeflow.job_run_timeline, system.lakeflow.job_task_run_timeline, system.lakeflow.pipelines, system.lakeflow.pipeline_update_timeline",
+      "sources": [
+        "billing_usage",
+        "lakeflow_jobs",
+        "lakeflow_job_tasks",
+        "lakeflow_job_runs",
+        "lakeflow_task_runs",
+        "lakeflow_pipelines",
+        "lakeflow_pipeline_updates"
+      ],
+      "source_statuses": {
+        "billing_usage": "collected",
+        "lakeflow_jobs": "empty",
+        "lakeflow_job_tasks": "empty",
+        "lakeflow_job_runs": "empty",
+        "lakeflow_task_runs": "empty",
+        "lakeflow_pipelines": "empty",
+        "lakeflow_pipeline_updates": "empty"
+      },
+      "purpose": "Attribute usage to jobs, tasks, pipelines, and their runs.",
+      "status": "empty",
+      "record_count": 0,
+      "earliest_timestamp": null,
+      "latest_timestamp": null,
+      "required_permission": "SELECT on billing and Lakeflow system tables",
+      "explanation": "No job, task, or pipeline run usage/activity was present."
+    },
+    {
+      "category": "Serverless consumption",
+      "category_key": "serverless_consumption",
+      "source_name": "serverless_consumption",
+      "dataset": "system.billing.usage, system.compute.warehouses, system.lakeflow.pipelines",
+      "sources": [
+        "billing_usage",
+        "compute_warehouses",
+        "lakeflow_pipelines"
+      ],
+      "source_statuses": {
+        "billing_usage": "collected",
+        "compute_warehouses": "collected",
+        "lakeflow_pipelines": "empty"
+      },
+      "purpose": "Identify serverless usage and related workload metadata.",
+      "status": "collected",
+      "record_count": 16,
+      "earliest_timestamp": "2026-10-04T12:00:00Z",
+      "latest_timestamp": "2026-10-08T20:00:00Z",
+      "required_permission": "SELECT on billing, compute, and Lakeflow system tables",
+      "explanation": "Collected category-specific evidence on 16 record(s)."
+    },
+    {
+      "category": "Storage-related usage",
+      "category_key": "storage_related_usage",
+      "source_name": "storage_related_usage",
+      "dataset": "system.billing.usage, system.storage.table_metrics_history, system.storage.predictive_optimization_operations_history, system.storage.auto_upgrade_operations_history",
+      "sources": [
+        "billing_usage",
+        "storage_table_metrics",
+        "storage_predictive_optimization",
+        "storage_auto_upgrade"
+      ],
+      "source_statuses": {
+        "billing_usage": "collected",
+        "storage_table_metrics": "empty",
+        "storage_predictive_optimization": "empty",
+        "storage_auto_upgrade": "empty"
+      },
+      "purpose": "Collect storage usage, table metrics, and storage optimization activity.",
+      "status": "collected",
+      "record_count": 119,
+      "earliest_timestamp": "2026-10-04T12:00:00Z",
+      "latest_timestamp": "2026-10-10T05:00:00Z",
+      "required_permission": "SELECT on billing and storage system tables",
+      "explanation": "Collected category-specific evidence on 119 record(s)."
+    },
+    {
+      "category": "Data-transfer or network-related usage",
+      "category_key": "data_transfer_and_network_usage",
+      "source_name": "data_transfer_and_network_usage",
+      "dataset": "system.billing.usage, system.access.inbound_network, system.access.outbound_network",
+      "sources": [
+        "billing_usage",
+        "network_inbound",
+        "network_outbound"
+      ],
+      "source_statuses": {
+        "billing_usage": "collected",
+        "network_inbound": "empty",
+        "network_outbound": "empty"
+      },
+      "purpose": "Collect network usage and transfer-related metadata.",
+      "status": "empty",
+      "record_count": 0,
+      "earliest_timestamp": null,
+      "latest_timestamp": null,
+      "required_permission": "SELECT on billing and access/network system tables",
+      "explanation": "Sources were queried successfully, but no network-specific usage or events were present in the requested time range."
+    },
+    {
+      "category": "SKU and pricing information",
+      "category_key": "sku_and_pricing",
+      "source_name": "sku_and_pricing",
+      "dataset": "system.billing.list_prices, system.billing.account_prices",
+      "sources": [
+        "billing_list_prices",
+        "billing_account_prices"
+      ],
+      "source_statuses": {
+        "billing_list_prices": "collected",
+        "billing_account_prices": "empty"
+      },
+      "purpose": "Collect historical list and account-specific SKU prices.",
+      "status": "collected",
+      "record_count": 541,
+      "earliest_timestamp": "2013-01-01T00:00:00Z",
+      "latest_timestamp": "2026-08-21T00:00:00Z",
+      "required_permission": "SELECT on billing pricing system tables",
+      "explanation": "Records collected successfully."
+    },
+    {
+      "category": "List-cost calculations",
+      "category_key": "list_cost_calculations",
+      "source_name": "list_cost_calculations",
+      "dataset": "system.billing.usage, system.billing.list_prices, system.billing.account_prices",
+      "sources": [
+        "billing_usage",
+        "billing_list_prices",
+        "billing_account_prices"
+      ],
+      "source_statuses": {
+        "billing_usage": "collected",
+        "billing_list_prices": "collected",
+        "billing_account_prices": "empty"
+      },
+      "purpose": "Join usage quantities to applicable prices using SKU, unit, cloud, and time.",
+      "status": "collected",
+      "record_count": 135,
+      "earliest_timestamp": "2026-10-04T12:00:00Z",
+      "latest_timestamp": "2026-10-10T05:00:00Z",
+      "required_permission": "SELECT on usage and pricing system tables",
+      "explanation": "Calculated list cost for 135 usage record(s) using time-matched list prices."
+    },
+    {
+      "category": "Resource and workload attribution",
+      "category_key": "resource_and_workload_attribution",
+      "source_name": "resource_and_workload_attribution",
+      "dataset": "system.billing.usage, system.billing.attributed_usage, system.query.history, system.lakeflow.job_run_timeline, system.lakeflow.job_task_run_timeline",
+      "sources": [
+        "billing_usage",
+        "billing_attributed_usage",
+        "query_history",
+        "lakeflow_job_runs",
+        "lakeflow_task_runs"
+      ],
+      "source_statuses": {
+        "billing_usage": "collected",
+        "billing_attributed_usage": "empty",
+        "query_history": "collected",
+        "lakeflow_job_runs": "empty",
+        "lakeflow_task_runs": "empty"
+      },
+      "purpose": "Attribute usage to resources, queries, jobs, tasks, and workloads.",
+      "status": "collected",
+      "record_count": 1214,
+      "earliest_timestamp": "2026-10-04T12:00:00Z",
+      "latest_timestamp": "2026-10-10T14:19:30.269000Z",
+      "required_permission": "SELECT on billing, query, and Lakeflow system tables",
+      "explanation": "Collected category-specific evidence on 1214 record(s)."
+    },
+    {
+      "category": "User and service-principal attribution",
+      "category_key": "user_and_service_principal_attribution",
+      "source_name": "user_and_service_principal_attribution",
+      "dataset": "system.billing.usage, system.billing.attributed_usage, system.query.history, system.lakeflow.jobs, system.lakeflow.job_run_timeline",
+      "sources": [
+        "billing_usage",
+        "billing_attributed_usage",
+        "query_history",
+        "lakeflow_jobs",
+        "lakeflow_job_runs"
+      ],
+      "source_statuses": {
+        "billing_usage": "collected",
+        "billing_attributed_usage": "empty",
+        "query_history": "collected",
+        "lakeflow_jobs": "empty",
+        "lakeflow_job_runs": "empty"
+      },
+      "purpose": "Collect identity metadata associated with usage and workloads.",
+      "status": "collected",
+      "record_count": 1336,
+      "earliest_timestamp": "2026-10-04T12:00:00Z",
+      "latest_timestamp": "2026-10-10T14:19:30.269000Z",
+      "required_permission": "SELECT on identity-bearing billing and workload tables",
+      "explanation": "Collected category-specific evidence on 1336 record(s)."
+    },
+    {
+      "category": "Tags and allocation metadata",
+      "category_key": "tags_and_allocation_metadata",
+      "source_name": "tags_and_allocation_metadata",
+      "dataset": "system.billing.usage, system.billing.attributed_usage, system.compute.clusters, system.compute.warehouses, system.lakeflow.jobs, system.lakeflow.pipelines",
+      "sources": [
+        "billing_usage",
+        "billing_attributed_usage",
+        "compute_clusters",
+        "compute_warehouses",
+        "lakeflow_jobs",
+        "lakeflow_pipelines"
+      ],
+      "source_statuses": {
+        "billing_usage": "collected",
+        "billing_attributed_usage": "empty",
+        "compute_clusters": "empty",
+        "compute_warehouses": "collected",
+        "lakeflow_jobs": "empty",
+        "lakeflow_pipelines": "empty"
+      },
+      "purpose": "Collect custom tags, granular tags, and allocation metadata.",
+      "status": "collected",
+      "record_count": 3,
+      "earliest_timestamp": "2026-10-04T12:00:00Z",
+      "latest_timestamp": "2026-10-04T12:00:00Z",
+      "required_permission": "SELECT on billing, compute, and Lakeflow system tables",
+      "explanation": "Collected category-specific evidence on 3 record(s)."
+    },
+    {
+      "category": "Budgets, alerts, and cost controls",
+      "category_key": "budgets_alerts_and_cost_controls",
+      "source_name": "budgets_alerts_and_cost_controls",
+      "dataset": "system.billing.usage",
+      "sources": [
+        "billing_usage"
+      ],
+      "source_statuses": {
+        "billing_usage": "collected"
+      },
+      "purpose": "Collect cost-control references such as budget policy identifiers exposed in usage metadata.",
+      "status": "empty",
+      "record_count": 0,
+      "earliest_timestamp": null,
+      "latest_timestamp": null,
+      "required_permission": "Billing-table access; alert or budget permissions where configured",
+      "explanation": "No budget_policy_id was present in the collected usage records; broad discovery found a system.alert schema, but no alert dataset is configured for collection."
+    },
+    {
+      "category": "Corrections, retractions, or restatements",
+      "category_key": "corrections_retractions_and_restatements",
+      "source_name": "corrections_retractions_and_restatements",
+      "dataset": "system.billing.usage",
+      "sources": [
+        "billing_usage"
+      ],
+      "source_statuses": {
+        "billing_usage": "collected"
+      },
+      "purpose": "Collect billing record types identifying original, retracted, or restated records.",
+      "status": "empty",
+      "record_count": 0,
+      "earliest_timestamp": null,
+      "latest_timestamp": null,
+      "required_permission": "SELECT on system.billing.usage",
+      "explanation": "No retraction or restatement billing records were present."
+    },
+    {
+      "category": "Optimization and cost-saving information",
+      "category_key": "optimization_and_cost_saving",
+      "source_name": "optimization_and_cost_saving",
+      "dataset": "system.compute.clusters, system.compute.instance_pools, system.compute.warehouses, system.compute.warehouse_events, system.compute.node_timeline, system.storage.table_metrics_history, system.storage.predictive_optimization_operations_history, system.storage.auto_upgrade_operations_history",
+      "sources": [
+        "compute_clusters",
+        "compute_instance_pools",
+        "compute_warehouses",
+        "compute_warehouse_events",
+        "compute_node_timeline",
+        "storage_table_metrics",
+        "storage_predictive_optimization",
+        "storage_auto_upgrade"
+      ],
+      "source_statuses": {
+        "compute_clusters": "empty",
+        "compute_instance_pools": "empty",
+        "compute_warehouses": "collected",
+        "compute_warehouse_events": "collected",
+        "compute_node_timeline": "empty",
+        "storage_table_metrics": "empty",
+        "storage_predictive_optimization": "empty",
+        "storage_auto_upgrade": "empty"
+      },
+      "purpose": "Collect configuration and activity that helps explain optimization opportunities.",
+      "status": "collected",
+      "record_count": 106,
+      "earliest_timestamp": "2026-10-04T12:41:57.639000Z",
+      "latest_timestamp": "2026-10-10T14:29:53.841000Z",
+      "required_permission": "SELECT on compute and storage system tables",
+      "explanation": "Optimization-related configuration or operational history was collected from: system.compute.warehouses, system.compute.warehouse_events."
+    },
+    {
+      "category": "Contract, commitment, or discount information",
+      "category_key": "contract_commitment_and_discount",
+      "source_name": "contract_commitment_and_discount",
+      "dataset": "system.billing.list_prices, system.billing.account_prices",
+      "sources": [
+        "billing_list_prices",
+        "billing_account_prices"
+      ],
+      "source_statuses": {
+        "billing_list_prices": "collected",
+        "billing_account_prices": "empty"
+      },
+      "purpose": "Collect available account-specific or promotional pricing without inventing commercial contract terms.",
+      "status": "unsupported",
+      "record_count": 0,
+      "earliest_timestamp": null,
+      "latest_timestamp": null,
+      "required_permission": "SELECT on billing pricing tables; contract capability if exposed",
+      "explanation": "Broad discovery found no validated commercial-terms source; account and list prices do not establish contracts or commitments."
+    }
+  ],
+  "redaction": "Account/workspace IDs, emails, user identities, tokens, and query contents are redacted in evidence and sample files. Raw JSONL exports are private and may contain identifying data."
+}

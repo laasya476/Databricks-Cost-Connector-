@@ -1,0 +1,27 @@
+# Virtual environment
+.venv/
+
+# Environment variables / secrets
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Pytest
+.pytest_cache/
+
+# Generated outputs
+outputs/
+outputs_run_*/
+private_runs/
+submission/
+!outputs/samples/
+!outputs/samples/*.json
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db

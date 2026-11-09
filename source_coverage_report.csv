@@ -1,0 +1,28 @@
+﻿source_name,dataset,status,record_count,partial_record_count,earliest_timestamp,latest_timestamp,required_permission,explanation
+billing_usage,system.billing.usage,collected,138,0,2026-10-04T12:00:00Z,2026-10-10T05:00:00Z,See source-specific Databricks system-table permissions.,
+billing_list_prices,system.billing.list_prices,collected,541,0,2013-01-01T00:00:00Z,2026-08-21T00:00:00Z,See source-specific Databricks system-table permissions.,
+billing_account_prices,system.billing.account_prices,empty,0,0,,,See source-specific Databricks system-table permissions.,No records were returned for the requested time range.
+billing_attributed_usage,system.billing.attributed_usage,empty,0,0,,,See source-specific Databricks system-table permissions.,No records were returned for the requested time range.
+billing_cloud_infra_cost,system.billing.cloud_infra_cost,empty,0,0,,,See source-specific Databricks system-table permissions.,No records were returned for the requested time range.
+compute_clusters,system.compute.clusters,empty,0,0,,,See source-specific Databricks system-table permissions.,No records were returned for the requested time range.
+compute_instance_events,system.compute.instance_events,empty,0,0,,,See source-specific Databricks system-table permissions.,No records were returned for the requested time range.
+compute_instance_pools,system.compute.instance_pools,empty,0,0,,,See source-specific Databricks system-table permissions.,No records were returned for the requested time range.
+compute_node_timeline,system.compute.node_timeline,empty,0,0,,,See source-specific Databricks system-table permissions.,No records were returned for the requested time range.
+compute_node_types,system.compute.node_types,collected,653,0,,,See source-specific Databricks system-table permissions.,
+compute_warehouses,system.compute.warehouses,collected,1,0,2026-10-04T12:41:57.639000Z,2026-10-04T12:41:57.639000Z,See source-specific Databricks system-table permissions.,
+compute_warehouse_events,system.compute.warehouse_events,collected,105,0,2026-10-04T12:47:26.467000Z,2026-10-10T14:29:53.841000Z,See source-specific Databricks system-table permissions.,
+lakeflow_jobs,system.lakeflow.jobs,empty,0,0,,,See source-specific Databricks system-table permissions.,No records were returned for the requested time range.
+lakeflow_job_tasks,system.lakeflow.job_tasks,empty,0,0,,,See source-specific Databricks system-table permissions.,No records were returned for the requested time range.
+lakeflow_job_runs,system.lakeflow.job_run_timeline,empty,0,0,,,See source-specific Databricks system-table permissions.,No records were returned for the requested time range.
+lakeflow_task_runs,system.lakeflow.job_task_run_timeline,empty,0,0,,,See source-specific Databricks system-table permissions.,No records were returned for the requested time range.
+lakeflow_pipelines,system.lakeflow.pipelines,empty,0,0,,,See source-specific Databricks system-table permissions.,No records were returned for the requested time range.
+lakeflow_pipeline_updates,system.lakeflow.pipeline_update_timeline,empty,0,0,,,See source-specific Databricks system-table permissions.,No records were returned for the requested time range.
+storage_table_metrics,system.storage.table_metrics_history,empty,0,0,,,See source-specific Databricks system-table permissions.,No records were returned for the requested time range.
+storage_predictive_optimization,system.storage.predictive_optimization_operations_history,empty,0,0,,,See source-specific Databricks system-table permissions.,No records were returned for the requested time range.
+storage_auto_upgrade,system.storage.auto_upgrade_operations_history,empty,0,0,,,See source-specific Databricks system-table permissions.,No records were returned for the requested time range.
+query_history,system.query.history,collected,1198,0,2026-10-04T12:47:27.274000Z,2026-10-10T14:19:30.269000Z,See source-specific Databricks system-table permissions.,
+workspaces_latest,system.access.workspaces_latest,collected,1,0,2026-10-04T12:41:44Z,2026-10-04T12:41:44Z,See source-specific Databricks system-table permissions.,
+network_inbound,system.access.inbound_network,empty,0,0,,,See source-specific Databricks system-table permissions.,No records were returned for the requested time range.
+network_outbound,system.access.outbound_network,empty,0,0,,,See source-specific Databricks system-table permissions.,No records were returned for the requested time range.
+serving_endpoint_usage,system.serving.endpoint_usage,empty,0,0,,,See source-specific Databricks system-table permissions.,No records were returned for the requested time range.
+serving_entities,system.serving.served_entities,empty,0,0,,,See source-specific Databricks system-table permissions.,No records were returned for the requested time range.

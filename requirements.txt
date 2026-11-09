@@ -1,0 +1,2 @@
+databricks-sql-connector==4.6.0
+python-dotenv==1.2.4

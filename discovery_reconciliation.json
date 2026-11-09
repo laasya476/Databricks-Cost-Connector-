@@ -1,0 +1,646 @@
+[
+  {
+    "schema": "access",
+    "table": "assistant_events",
+    "source_name": null,
+    "collection_status": "not_configured",
+    "explanation": "Discovered in a cost-relevant schema; no collector is configured because this table's record semantics have not been validated."
+  },
+  {
+    "schema": "access",
+    "table": "audit",
+    "source_name": null,
+    "collection_status": "not_configured",
+    "explanation": "Discovered in a cost-relevant schema; no collector is configured because this table's record semantics have not been validated."
+  },
+  {
+    "schema": "access",
+    "table": "clean_room_events",
+    "source_name": null,
+    "collection_status": "not_configured",
+    "explanation": "Discovered in a cost-relevant schema; no collector is configured because this table's record semantics have not been validated."
+  },
+  {
+    "schema": "access",
+    "table": "column_lineage",
+    "source_name": null,
+    "collection_status": "not_configured",
+    "explanation": "Discovered in a cost-relevant schema; no collector is configured because this table's record semantics have not been validated."
+  },
+  {
+    "schema": "access",
+    "table": "inbound_network",
+    "source_name": "network_inbound",
+    "collection_status": "empty",
+    "explanation": "Collection attempted by the configured source."
+  },
+  {
+    "schema": "access",
+    "table": "outbound_network",
+    "source_name": "network_outbound",
+    "collection_status": "empty",
+    "explanation": "Collection attempted by the configured source."
+  },
+  {
+    "schema": "access",
+    "table": "table_lineage",
+    "source_name": null,
+    "collection_status": "not_configured",
+    "explanation": "Discovered in a cost-relevant schema; no collector is configured because this table's record semantics have not been validated."
+  },
+  {
+    "schema": "access",
+    "table": "workspaces_latest",
+    "source_name": "workspaces_latest",
+    "collection_status": "collected",
+    "explanation": "Collection attempted by the configured source."
+  },
+  {
+    "schema": "ai_gateway",
+    "table": "external_model_spend",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "ai_gateway",
+    "table": "usage",
+    "source_name": null,
+    "collection_status": "not_configured",
+    "explanation": "Discovered in a cost-relevant schema; no collector is configured because this table's record semantics have not been validated."
+  },
+  {
+    "schema": "alert",
+    "table": "alert_evaluation_history",
+    "source_name": null,
+    "collection_status": "not_configured",
+    "explanation": "Discovered in a cost-relevant schema; no collector is configured because this table's record semantics have not been validated."
+  },
+  {
+    "schema": "alert",
+    "table": "alerts",
+    "source_name": null,
+    "collection_status": "not_configured",
+    "explanation": "Discovered in a cost-relevant schema; no collector is configured because this table's record semantics have not been validated."
+  },
+  {
+    "schema": "billing",
+    "table": "account_prices",
+    "source_name": "billing_account_prices",
+    "collection_status": "empty",
+    "explanation": "Collection attempted by the configured source."
+  },
+  {
+    "schema": "billing",
+    "table": "attributed_usage",
+    "source_name": "billing_attributed_usage",
+    "collection_status": "empty",
+    "explanation": "Collection attempted by the configured source."
+  },
+  {
+    "schema": "billing",
+    "table": "cloud_infra_cost",
+    "source_name": "billing_cloud_infra_cost",
+    "collection_status": "empty",
+    "explanation": "Collection attempted by the configured source."
+  },
+  {
+    "schema": "billing",
+    "table": "list_prices",
+    "source_name": "billing_list_prices",
+    "collection_status": "collected",
+    "explanation": "Collection attempted by the configured source."
+  },
+  {
+    "schema": "billing",
+    "table": "usage",
+    "source_name": "billing_usage",
+    "collection_status": "collected",
+    "explanation": "Collection attempted by the configured source."
+  },
+  {
+    "schema": "compute",
+    "table": "clusters",
+    "source_name": "compute_clusters",
+    "collection_status": "empty",
+    "explanation": "Collection attempted by the configured source."
+  },
+  {
+    "schema": "compute",
+    "table": "instance_events",
+    "source_name": "compute_instance_events",
+    "collection_status": "empty",
+    "explanation": "Collection attempted by the configured source."
+  },
+  {
+    "schema": "compute",
+    "table": "instance_pools",
+    "source_name": "compute_instance_pools",
+    "collection_status": "empty",
+    "explanation": "Collection attempted by the configured source."
+  },
+  {
+    "schema": "compute",
+    "table": "node_timeline",
+    "source_name": "compute_node_timeline",
+    "collection_status": "empty",
+    "explanation": "Collection attempted by the configured source."
+  },
+  {
+    "schema": "compute",
+    "table": "node_types",
+    "source_name": "compute_node_types",
+    "collection_status": "collected",
+    "explanation": "Collection attempted by the configured source."
+  },
+  {
+    "schema": "compute",
+    "table": "warehouse_events",
+    "source_name": "compute_warehouse_events",
+    "collection_status": "collected",
+    "explanation": "Collection attempted by the configured source."
+  },
+  {
+    "schema": "compute",
+    "table": "warehouses",
+    "source_name": "compute_warehouses",
+    "collection_status": "collected",
+    "explanation": "Collection attempted by the configured source."
+  },
+  {
+    "schema": "information_schema",
+    "table": "abac_policy_definitions",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "catalog_privileges",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "catalog_provider_share_usage",
+    "source_name": null,
+    "collection_status": "not_configured",
+    "explanation": "Discovered in a cost-relevant schema; no collector is configured because this table's record semantics have not been validated."
+  },
+  {
+    "schema": "information_schema",
+    "table": "catalog_tags",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "catalogs",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "check_constraints",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "column_masks",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "column_tags",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "columns",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "connection_privileges",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "connections",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "constraint_column_usage",
+    "source_name": null,
+    "collection_status": "not_configured",
+    "explanation": "Discovered in a cost-relevant schema; no collector is configured because this table's record semantics have not been validated."
+  },
+  {
+    "schema": "information_schema",
+    "table": "constraint_table_usage",
+    "source_name": null,
+    "collection_status": "not_configured",
+    "explanation": "Discovered in a cost-relevant schema; no collector is configured because this table's record semantics have not been validated."
+  },
+  {
+    "schema": "information_schema",
+    "table": "credential_privileges",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "credentials",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "external_location_privileges",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "external_locations",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "information_schema_catalog_name",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "key_column_usage",
+    "source_name": null,
+    "collection_status": "not_configured",
+    "explanation": "Discovered in a cost-relevant schema; no collector is configured because this table's record semantics have not been validated."
+  },
+  {
+    "schema": "information_schema",
+    "table": "metastore_privileges",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "metastores",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "parameters",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "providers",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "recipient_allowed_ip_ranges",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "recipient_tokens",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "recipients",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "referential_constraints",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "routine_columns",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "routine_privileges",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "routines",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "row_filters",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "schema_privileges",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "schema_share_usage",
+    "source_name": null,
+    "collection_status": "not_configured",
+    "explanation": "Discovered in a cost-relevant schema; no collector is configured because this table's record semantics have not been validated."
+  },
+  {
+    "schema": "information_schema",
+    "table": "schema_tags",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "schemata",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "share_recipient_privileges",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "shares",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "storage_credential_privileges",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "storage_credentials",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "table_constraints",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "table_privileges",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "table_share_usage",
+    "source_name": null,
+    "collection_status": "not_configured",
+    "explanation": "Discovered in a cost-relevant schema; no collector is configured because this table's record semantics have not been validated."
+  },
+  {
+    "schema": "information_schema",
+    "table": "table_tags",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "tables",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "views",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "volume_privileges",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "volume_tags",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "information_schema",
+    "table": "volumes",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "lakeflow",
+    "table": "job_run_timeline",
+    "source_name": "lakeflow_job_runs",
+    "collection_status": "empty",
+    "explanation": "Collection attempted by the configured source."
+  },
+  {
+    "schema": "lakeflow",
+    "table": "job_task_run_timeline",
+    "source_name": "lakeflow_task_runs",
+    "collection_status": "empty",
+    "explanation": "Collection attempted by the configured source."
+  },
+  {
+    "schema": "lakeflow",
+    "table": "job_tasks",
+    "source_name": "lakeflow_job_tasks",
+    "collection_status": "empty",
+    "explanation": "Collection attempted by the configured source."
+  },
+  {
+    "schema": "lakeflow",
+    "table": "jobs",
+    "source_name": "lakeflow_jobs",
+    "collection_status": "empty",
+    "explanation": "Collection attempted by the configured source."
+  },
+  {
+    "schema": "lakeflow",
+    "table": "pipeline_update_timeline",
+    "source_name": "lakeflow_pipeline_updates",
+    "collection_status": "empty",
+    "explanation": "Collection attempted by the configured source."
+  },
+  {
+    "schema": "lakeflow",
+    "table": "pipelines",
+    "source_name": "lakeflow_pipelines",
+    "collection_status": "empty",
+    "explanation": "Collection attempted by the configured source."
+  },
+  {
+    "schema": "lakeflow",
+    "table": "zerobus_ingest",
+    "source_name": null,
+    "collection_status": "not_configured",
+    "explanation": "Discovered in a cost-relevant schema; no collector is configured because this table's record semantics have not been validated."
+  },
+  {
+    "schema": "lakeflow",
+    "table": "zerobus_stream",
+    "source_name": null,
+    "collection_status": "not_configured",
+    "explanation": "Discovered in a cost-relevant schema; no collector is configured because this table's record semantics have not been validated."
+  },
+  {
+    "schema": "lakeflow_pipeline_events_preview",
+    "table": "pipeline_events",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "mlflow",
+    "table": "experiments_latest",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "mlflow",
+    "table": "run_metrics_history",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "mlflow",
+    "table": "runs_latest",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "query",
+    "table": "history",
+    "source_name": "query_history",
+    "collection_status": "collected",
+    "explanation": "Collection attempted by the configured source."
+  },
+  {
+    "schema": "serving",
+    "table": "endpoint_usage",
+    "source_name": "serving_endpoint_usage",
+    "collection_status": "empty",
+    "explanation": "Collection attempted by the configured source."
+  },
+  {
+    "schema": "serving",
+    "table": "served_entities",
+    "source_name": "serving_entities",
+    "collection_status": "empty",
+    "explanation": "Collection attempted by the configured source."
+  },
+  {
+    "schema": "sharing",
+    "table": "materialization_history",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  },
+  {
+    "schema": "storage",
+    "table": "auto_upgrade_operations_history",
+    "source_name": "storage_auto_upgrade",
+    "collection_status": "empty",
+    "explanation": "Collection attempted by the configured source."
+  },
+  {
+    "schema": "storage",
+    "table": "predictive_optimization_operations_history",
+    "source_name": "storage_predictive_optimization",
+    "collection_status": "empty",
+    "explanation": "Collection attempted by the configured source."
+  },
+  {
+    "schema": "storage",
+    "table": "table_metrics_history",
+    "source_name": "storage_table_metrics",
+    "collection_status": "empty",
+    "explanation": "Collection attempted by the configured source."
+  },
+  {
+    "schema": "tags",
+    "table": "governed_tags",
+    "source_name": null,
+    "collection_status": "outside_cost_scope",
+    "explanation": "Discovered outside the configured cost-management schemas."
+  }
+]
